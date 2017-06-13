@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>A Pedra Falante </title>
+		<script type="text/javascript">
+			function tocarPedra(){
+				var nomeUsuario = prompt ("Qual O Seu Nome?", "Digite Seu Nome Aqui.");
+
+				if(nomeUsuario==null){
+					alert("Por Favor Digite Um Nome.");
+					document.getElementById("pedra").src = "pedrabrava.jpg";
+				}
+				else if (nomeUsuario){
+					alert("Prazer em conhecer você, "+nomeUsuario+".");
+					document.getElementById("pedra").src = "pedrafeliz.jpg";
+				}
+			}
+		</script>
+	</head>
+
+	<body onload = "alert('Olá, Eu Sou A Pedra Falante!');">
+		<div style="margin-top:100px; text-align:center">
+			<img id="pedra" src="pedra.jpg" alt="A Pedra" style="cursor:pointer"onclick = "tocarPedra();" />
+		</div>
+	</body>
+</html>
+
